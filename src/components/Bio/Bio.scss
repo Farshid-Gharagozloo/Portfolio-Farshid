@@ -1,0 +1,60 @@
+@import '../../styles/colors';
+
+
+.Bio{
+    background-color: $color-primary-2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: $color-primary-1;
+    padding-left: 20vw;
+
+    &__head{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    &__title{
+        margin-top: 0;
+        margin-right: 12vw;
+        font-size: 5rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    &__line{
+        background: linear-gradient(to top left,
+        $color-primary-2 0%,
+        $color-primary-2 calc(50% - 2.5px),
+        $color-primary-1 50%,
+        $color-primary-2 calc(50% + 2.5px),
+        $color-primary-2 100%);
+        width: 3rem;
+        height: 6rem;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    &__main{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__image{
+        width: 25vw;
+    }
+
+    &__intro{
+        width: 30vw;
+        margin: 0 3rem;
+        text-align: justify;
+    }
+
+    
+}
+

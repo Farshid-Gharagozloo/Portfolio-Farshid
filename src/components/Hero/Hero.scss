@@ -1,0 +1,87 @@
+@import '../../styles/colors';
+
+
+.Hero{
+    background-color: $color-primary-1;
+    height: 100vh;
+    width: 100vw;
+
+    color: $color-black;
+
+    &__main{
+        padding: 0 3rem;
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__rectangle{
+        margin-top: 2.5rem;
+        width: 17rem;
+        height: 1rem;
+        background-color: $color-black;
+        z-index: 5;
+    }
+
+    &__img{
+        position: relative;
+        right: 8rem;
+        border-radius: 50%;
+        object-fit:cover;
+        width: 30rem;
+        height: 30rem;
+        z-index: 1;
+        
+    }
+
+    &__title{
+        position: relative;
+        right: 15rem;
+        font-size: 6rem;
+        width: 12rem;
+        z-index: 5;
+    }
+
+    &__underline{
+        display: flex;
+        justify-content: end;
+    }
+
+    &__leftside{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+    }
+
+    &__forward{
+        display: flex;
+        justify-content: end;
+    }
+
+    &__line{
+        width: 50vw;
+        border-bottom: 2px solid $color-black;
+        font-size: 3rem;
+    }
+
+    // &__arrow{
+    //     position: relative;
+    //     display: inline-block;
+    //     font-size: 2rem;
+    //     top: 2.5vh;
+    // }
+
+    // &__arrow::before{
+    //     content: "<";
+    // }
+
+    &__square{
+        width: 30vw;
+        height: 11.75rem;
+        background-color: $color-primary-2;
+        margin: auto;
+        margin-right: 0;
+        
+    }
+}
