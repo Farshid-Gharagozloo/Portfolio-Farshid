@@ -47,22 +47,22 @@ export default function PersonalSkills(){
                 </div>
 
                 <div className="personal__skillset">
-                    <h4 className="personal__skill">Time Management</h4>
-                    <div className="personal__skilldetails">
-                        <img src={time_management} alt="adaptability image" className="personal__skillimg" />
-                        <p className="personal__skilltext">Adept at prioritizing tasks and meeting deadlines, 
-                            I ensure timely delivery of high-quality software products by employing effective 
-                            time management strategies throughout the development lifecycle.</p>
-                    </div>
-                </div>
-
-                <div className="personal__skillset">
                     <h4 className="personal__skill">Coding</h4>
                     <div className="personal__skilldetails">
                         <img src={coding} alt="adaptability image" className="personal__skillimg" />
                         <p className="personal__skilltext">Proficient in multiple programming languages, 
                             I demonstrate a mastery of coding principles, employing clean and scalable 
                             code to develop robust and innovative software applications.</p>
+                    </div>
+                </div>
+
+                <div className="personal__skillset">
+                    <h4 className="personal__skill">Time Management</h4>
+                    <div className="personal__skilldetails">
+                        <img src={time_management} alt="adaptability image" className="personal__skillimg" />
+                        <p className="personal__skilltext">Adept at prioritizing tasks and meeting deadlines, 
+                            I ensure timely delivery of high-quality software products by employing effective 
+                            time management strategies throughout the development lifecycle.</p>
                     </div>
                 </div>
 

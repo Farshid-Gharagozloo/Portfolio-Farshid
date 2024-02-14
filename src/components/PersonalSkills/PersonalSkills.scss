@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../styles/all';
 
 
 .personal{
@@ -6,25 +6,27 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 82vw;
-    height: 100vh;
-    padding: 0 9vw;
+    width: 100vw;
+    min-height: 100vh;
 
     &__head{
-        margin-top: 2rem;
+        margin-top: 5rem;
         display: flex;
         justify-content: space-between;
-        width: 80vw;
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 2rem;
     }
 
     &__title{
-        font-size: 4rem;
+        font-size: 2rem;
+        text-align: left;
         color: $color-black;
     }
 
     &__rectangle{
-        width: 17rem;
-        height: 1.75rem;
+        width: 24vw;
+        height: 0.75rem;
         background-color: $color-black;
     }
 
@@ -32,37 +34,141 @@
     &__main{
         display: flex;
         flex-wrap: wrap;
-        gap: 3vw;
+        gap: 10vw;
+        max-width: 40rem;
+        padding:0 2rem;
     }
 
     &__skillset{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 7rem;
     }
 
     &__skill{
         margin-top: 0;
-        font-size: 1.15rem;
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
         color: $color-primary-2;
+        margin-bottom: 1rem;
+        height: 2rem;
     }
 
     &__skilldetails{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 7rem;
     }
 
     &__skilltext{
-        width: 16vw;
-        text-align:justify;
-        margin-left: 1rem;
-        color: $color-black;
+        display: none;
     }
 
     &__skillimg{
-        width: 8.5rem;
-        height: 8.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
         border-radius: 50%;
         border: solid $color-primary-2 2px;
+        
+    }
+
+    @include tablet{
+
+        &__head{
+            padding-left: 3rem;
+        }
+
+        &__title{
+            font-size: 2.5rem;
+        }
+
+        &__rectangle{
+            height: 1.25rem;
+            width: 36vw;
+        }
+
+        &__main{
+            padding: 3rem;
+            max-width: 100%;
+            gap:3.75vw 7.5vw;
+        }
+
+        &__skillset{
+            width: 40vw;
+            max-width: 25rem;
+        }
+
+        &__skill{
+            font-size: 1.5rem;
+            text-align: left;
+        }
+
+        &__skilldetails{
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 22rem;
+            gap: 1rem;
+        }
+
+        &__skilltext{
+            color: $color-black;
+            display:flex ;
+            text-align:left ;
+            text-align: justify;
+            width: 15rem;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+    }
+
+    @include desktop{
+
+        &__head{
+            padding: 0 6rem;
+        }
+
+        &__title{
+            font-size: 3.5rem;
+        }
+
+        &__rectangle{
+            height: 1.75rem;
+            width: 17rem;
+        }
+
+        &__main{
+            padding: 2rem 6rem;
+            gap: 2rem 4rem;
+            // justify-content:;
+        }
+
+        &__skill{
+            margin-bottom: 0;
+        }
+
+        &__skillimg{
+            width: 7rem;
+            height: 7rem;
+            margin: 1rem 0;
+        }
+
+        &__skilldetails{
+            max-width: 30rem;
+            justify-content: flex-start;
+            gap: 1.5rem;
+        }
+
+        &__skilltext{
+            width: 16rem;
+            font-size: 1rem;
+        }
+
+
     }
   
 }

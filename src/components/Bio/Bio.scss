@@ -1,29 +1,31 @@
-@import '../../styles/colors';
+@import '../../styles/all';
 
 
 .Bio{
     background-color: $color-primary-2;
-    width: 91vw;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: start;
     color: $color-primary-1;
-    padding-left: 9vw;
 
     &__head{
+        padding: 0 2rem;
         margin-top: 3rem;
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content:space-between;
+        box-sizing: border-box;
+        width: 100%;
     }
 
     &__title{
+        max-width: 32rem;
         margin-top: 0;
-        margin-right: 12vw;
-        font-size: 5rem;
-        text-align: justify;
-        text-justify: inter-word;
+        margin-right: 1rem;
+        font-size: 2rem;
+        text-align:left;
     }
 
     &__line{
@@ -33,28 +35,117 @@
         $color-primary-1 50%,
         $color-primary-2 calc(50% + 2.5px),
         $color-primary-2 100%);
-        width: 3rem;
-        height: 6rem;
-        margin-top: 2rem;
-        padding: 1rem 2rem;
+        width: 0.5rem;
+        height: 5rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 1rem;
     }
 
     &__main{
         display: flex;
-        justify-content: space-between;
-
+        flex-direction: column;
+        padding: 0 2rem;
     }
 
     &__image{
-        width: 25vw;
+        width: 50vw;
+        border-radius: 5%;
     }
 
     &__intro{
-        width: 30vw;
-        margin: 0 3rem;
+        margin: 0;
+        margin-bottom: 2rem;
         text-align: justify;
     }
 
-    
-}
+    @include tablet{
 
+        &__head{
+            padding: 0 3rem;
+        }
+
+        &__title{
+            margin-top: 1rem;
+            font-size: 2.5rem;
+        }
+
+        &__main{
+            padding: 2rem 3rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap:3rem
+        }
+
+        &__image{
+            width: 29rem;
+            height: 20rem;
+        }
+
+        &__intro{
+            width: 29rem;
+            margin-bottom: 0;
+        }
+
+        &__about{
+            font-size: 1.25rem;
+            margin-top: 0;
+        }
+
+        &__text{
+            font-size: 1rem;
+        }
+
+    }
+
+    @include desktop{
+
+        &__head{
+            padding: 0 6rem;
+        }
+
+        &__title{
+            font-size: 3.5rem;
+            max-width: 80vw;
+        }
+
+        &__line{
+            background: linear-gradient(to top left,
+            $color-primary-2 0%,
+            $color-primary-2 calc(50% - 2.5px),
+            $color-primary-1 50%,
+            $color-primary-2 calc(50% + 2.5px),
+            $color-primary-2 100%);
+            width: 3rem;
+            height: 6rem;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+        }
+
+        &__main{
+            gap: 4rem;
+            padding: 4rem 6rem;
+        }
+
+        &__image{
+            margin: 1rem 0;
+            width: 32rem;
+            height: 22rem;
+        }
+
+        &__intro{
+            width: 32rem;
+        }
+
+        &__about{
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        &__text{
+            font-size: 1.25rem;
+            margin: 0;
+        }
+    }
+
+}

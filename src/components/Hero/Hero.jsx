@@ -12,15 +12,10 @@ export default function Hero(){
             </div>
             <div className="Hero__underline">
                 <section className="Hero__leftside">
-                    {/* <div className="Hero__forward"> */}
-                        {/* <div className="Hero__arrow"></div> */}
-                        <div className="Hero__line"></div>
-                    {/* </div> */}
+                    <div className="Hero__line"></div>
                     <div className="Hero__square"></div>
                 </section>
-
             </div>
-
         </section>
     );
 }

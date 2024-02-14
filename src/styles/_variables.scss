@@ -1,0 +1,14 @@
+@import 'sass-rem';
+/* stylelint-disable*/
+/* ==========================================================================
+Variables
+========================================================================== */
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1280px;
+
+// Max and Min screen sizes
+// $max-width: rem(1020px);
+$max-width: 90vw;
+
+$min-width: $width-mobile;
